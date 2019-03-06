@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Javascript Exercises</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JS Calculator Exercises</h1>
+    </header>
+    <hr>
+    <div class="card-group container">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Area of Triangle</h5>
+                <form class="form form-control text-center">
+                    <input type="text" id="side-1" placeholder="side 1" /><br><br>
+                    <input type="text" id="side-2" placeholder="side 2" /><br><br>
+                    <input type="text" id="side-3" placeholder="side 3" /><br><br>
+                    <input class='btn btn-sm btn-success' type="button" Value="Calculate" id="btnCalc" />
+                    <input class='btn btn-sm btn-success' type="button" Value="Reset" id="clear" onClick="this.form.reset()"/>
+                </form>
+                <p>The Result is: <br>
+                <span id = "result"></span>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Celsius to Fahrenheit</h5>
+                <form class="form form-control text-center">
+                    <input type="text" id="c" placeholder="Enter Celsius" />
+                    <br>
+                    <p>Fahrenheit: <br>
+                    <span id = "resultF"></span>
+                    </p>
+                    <input type="text" id="f" placeholder="Enter Fahrenheit" />
+                    <br>
+                    <p>Celsius: <br>
+                       <span id = "resultC"></span>
+                    </p>
+                    <input class='btn btn-sm btn-success' type="button" Value="Calculate" id="tempCalc" />
+                    <input class='btn btn-sm btn-success' type="button" Value="Reset" id="clearTemp" onClick="this.form.reset()"/>
+                </form>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Simple Multipy and Divide</h5>
+                <form class="form form-control text-center">
+                    <input type="text" id="num1" placeholder="number 1" /><br><br>
+                    <input type="text" id="num2" placeholder="number 2" /><br><br>
+        
+                    <input class='btn btn-sm btn-success' type="button" Value="Multipy" id="multiply" />
+                    <input class='btn btn-sm btn-success' type="button" Value="Divide" id="divide" />
+                    <input class='btn btn-sm btn-success' type="button" Value="Reset" id="clearNums" onClick="this.form.reset()"/>
+                </form>
+                <p>The Result is: <br>
+                <span id = "resultNums"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+</body>
+</html>
